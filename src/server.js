@@ -11,7 +11,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/scraper', {
   useUnifiedTopology: true
 });
 
-const User = require('./models/User');
+const User = require('./models/Users.js');
 
 // Middleware JWT
 const authenticate = (req, res, next) => {
